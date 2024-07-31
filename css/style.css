@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -152,6 +153,7 @@ nav img {
   height: 160px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
+  width: 100%;
 }
 .restaurants i {
   font-size: 23px;
@@ -185,6 +187,82 @@ footer .footer-element {
 footer i {
   font-size: 13px;
   margin-right: 10px;
+}
+
+nav a {
+  position: absolute;
+  left: 0;
+  margin-left: 20px;
+  font-size: 20px;
+  color: black;
+}
+.restaurant-img {
+  height: 275px;
+  width: 100%;
+}
+
+.body-container {
+  position: relative;
+}
+
+.menu-container {
+  position: absolute;
+  top: 230px;
+  left: 0;
+  width: 100%;
+  background: #F6F6F6;
+  z-index: 1;
+  border-radius: 50px 50px 0px 0px;
+}
+
+.menu-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  font-family: Shrikhand;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: semibold;
+  font-weight: 100;
+}
+
+.menu-title, .menu-entrées, .menu-plats, .menu-desserts {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.menu-entrées h2, .menu-plats h2, .menu-desserts h2 {
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 18.75px;
+}
+
+.menu-elements {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-family: Roboto;
+}
+.menu-elements h4 {
+  font-size: 18px;
+}
+.menu-elements p {
+  font-size: 15px;
+}
+
+.menu-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-container {
+  margin-top: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
