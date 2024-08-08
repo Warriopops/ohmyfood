@@ -72,6 +72,10 @@ nav img {
   box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.3);
   font-size: 16px;
 }
+.reservation button:hover {
+  background: linear-gradient(193.33deg, #B574E6 -11.44%, #FF9DE6 123.93%);
+  cursor: pointer;
+}
 
 .fonctionnement {
   padding: 50px 20px 50px 20px;
@@ -165,7 +169,6 @@ footer {
   height: 186px;
   background-color: #353535;
   color: white;
-  padding-left: 20px;
 }
 footer .logo {
   font-family: Shrikhand;
@@ -188,6 +191,30 @@ footer i {
   font-size: 13px;
   margin-right: 10px;
 }
+footer .fa-handshake {
+  transform: rotate(130deg);
+  top: 0;
+  height: 15px;
+  width: 11px;
+}
+
+.footer-container {
+  padding-left: 20px;
+}
+
+.new {
+  color: #008766;
+  background-color: #99E2D0;
+  width: 80px;
+  height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
 
 nav a {
   position: absolute;
@@ -196,6 +223,7 @@ nav a {
   font-size: 20px;
   color: black;
 }
+
 .restaurant-img {
   height: 275px;
   width: 100%;
@@ -204,10 +232,13 @@ nav a {
 .body-container {
   position: relative;
 }
+.body-container img {
+  object-fit: cover;
+}
 
 .menu-container {
-  position: absolute;
-  top: 230px;
+  position: relative;
+  margin-top: -60px;
   left: 0;
   width: 100%;
   background: #F6F6F6;
@@ -221,11 +252,15 @@ nav a {
   align-items: center;
   justify-content: space-between;
   padding-top: 30px;
+  padding-bottom: 30px;
   font-family: Shrikhand;
   font-size: 15px;
   font-style: italic;
   font-weight: semibold;
   font-weight: 100;
+}
+.menu-title i {
+  font-size: 25px;
 }
 
 .menu-title, .menu-entrées, .menu-plats, .menu-desserts {
@@ -236,23 +271,29 @@ nav a {
 .menu-entrées h2, .menu-plats h2, .menu-desserts h2 {
   text-transform: uppercase;
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 100;
   line-height: 18.75px;
+  border-bottom: 3px solid #99E2D0;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  width: 10%;
 }
 
 .menu-elements {
   background-color: white;
   border-radius: 10px;
   padding: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-family: Roboto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 .menu-elements h4 {
   font-size: 18px;
+  padding-bottom: 5px;
 }
 .menu-elements p {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .menu-description {
@@ -261,8 +302,42 @@ nav a {
   justify-content: space-between;
 }
 
-.footer-container {
-  margin-top: 100%;
+#button-menu {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  color: white;
+  padding: 20px 55px 20px 55px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 45px;
+  padding-top: 30px;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.fa-heart {
+  cursor: pointer;
+}
+.fa-heart::before {
+  font-weight: 0;
+  color: black;
+}
+
+.toggle-checkbox:checked ~ .heart-container .fa-heart::before {
+  color: #9356DC;
+  font-weight: 900;
+}
+
+.heart-container {
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
