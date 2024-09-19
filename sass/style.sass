@@ -334,17 +334,37 @@ nav
   margin-bottom: 15px
   font-family: Roboto
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1)
+  position: relative
+  .check
+    display: none
+
   h4
     font-size: 18px
     padding-bottom: 5px
     white-space: nowrap
     overflow: hidden
     text-overflow: ellipsis
+
   p 
     font-size: 14px
     white-space: nowrap
     overflow: hidden
     text-overflow: ellipsis
+  &:hover
+    h5
+      margin-right: 50px
+    .check
+      background-color: #99E2D0
+      width: 50px
+      height: 72px
+      position: absolute
+      border-radius: 0px 10px 10px 0px
+      display: flex
+      justify-content: center
+      align-items: center
+      top: 0
+      right: 0
+
 
 .menu-description
   display: flex
@@ -487,23 +507,6 @@ nav
   100% 
     opacity: 1
     display: block
-
-.test
-  background-color: #99E2D0
-  width: 50px
-  right: 0
-  height: 72px
-  position: absolute
-  margin-right: 15px
-  border-radius: 0px 15px 15px 0px
-  display: flex
-  justify-content: center
-  align-items: center
-.test-container
-  display: flex
-  flex-direction: row
-h5
-  margin-right: 50px
 
 .fa-check
   background-color: white
