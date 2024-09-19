@@ -21,18 +21,24 @@
       <img src="../assets/images/logo/ohmyfood@2x.svg" alt="logo">
     </nav>
   </header>
+  <div class="loading">
+    <h1>Loading...</h1>
+    <div class="loader"></div>
+  </div>
   <div class="body-container">
     <img src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant card 1"
       class="restaurant-img">
     <div class="menu-container">
       <div class="menu-title">
         <h2>À la française</h2>
-        <input type="checkbox" id="toggle-coeur-1" class="toggle-checkbox">
-            <div class="heart-container">
-                <label for="toggle-coeur-1">
-                    <i class="fa-regular fa-heart"></i>
-                </label>
-            </div>
+        <div class="animation-heart">
+          <div class="animation-heart-empty">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="animation-heart-full">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </div>
       </div>
       <div class="menu-entrées">
         <h2>entrées</h2>
@@ -40,21 +46,21 @@
           <h4>Tartare de pouple acidulé</h4>
           <div class="menu-description">
             <p>Aux zestes d'orange</p>
-            <p>25 €</p>
+            <h5>25 €</h5>
           </div>
         </div>
         <div class="menu-elements">
           <h4>Velouté de légumes d'antan</h4>
           <div class="menu-description">
             <p>Carotte, panais, topinambour</p>
-            <p>35 €</p>
+            <h5>35 €</h5>
           </div>
         </div>
         <div class="menu-elements">
           <h4>Soupe à l'oignon</h4>
           <div class="menu-description">
             <p>Revisitée</p>
-            <p>20 €</p>
+            <h5>20 €</h5>
           </div>
         </div>
       </div>
@@ -64,21 +70,21 @@
           <h4>Coquilles Saint-Jacques</h4>
           <div class="menu-description">
             <p>Accompagnés d'une purée de panais</p>
-            <p>40 €</p>
+            <h5>40 €</h5>
           </div>
         </div>
         <div class="menu-elements">
           <h4>Magret de canard</h4>
           <div class="menu-description">
             <p>Et parmentier de pommes de terre</p>
-            <p>35 €</p>
+            <h5>35 €</h5>
           </div>
         </div>
         <div class="menu-elements">
           <h4>Pigeonneau d'Ille-et-Vilaine</h4>
           <div class="menu-description">
             <p>Sur son lit de gnocchis aux légumes</p>
-            <p>44 €</p>
+            <h5>44 €</h5>
           </div>
         </div>
       </div>
@@ -88,21 +94,21 @@
           <h4>Pétales de violettes glacés</h4>
           <div class="menu-description">
             <p>Et purée de noisettes</p>
-            <p>18 €</p>
+            <h5>18 €</h5>
           </div>
         </div>
         <div class="menu-elements">
           <h4>Fondant au chocolat</h4>
           <div class="menu-description">
             <p>Revisité</p>
-            <p>22 €</p>
+            <h5>22 €</h5>
           </div>
         </div>
         <div class="menu-elements">
           <h4>Millefeuille croustillant</h4>
           <div class="menu-description">
             <p>Myrtilles et pâte d'amande</p>
-            <p>23 €</p>
+            <h5>23 €</h5>
           </div>
         </div>
       </div>
@@ -123,7 +129,7 @@
         <p>Devenir partenaire</p>
       </div>
       <p>Mentions légales</p>
-      <p>Contact</p>
+      <a href="mailto:votreadresse@mail.fr">Contact</a>
     </div>
   </footer>
 </body>

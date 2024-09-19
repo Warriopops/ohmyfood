@@ -21,18 +21,24 @@
       <img src="../assets/images/logo/ohmyfood@2x.svg" alt="logo">
     </nav>
   </header>
+  <div class="loading">
+    <h1>Loading...</h1>
+    <div class="loader"></div>
+  </div>
   <div class="body-container">
     <img src="../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restaurant card 1"
       class="restaurant-img">
     <div class="menu-container">
       <div class="menu-title">
         <h2>Le délice des sens</h2>
-        <input type="checkbox" id="toggle-coeur-1" class="toggle-checkbox">
-            <div class="heart-container">
-                <label for="toggle-coeur-1">
-                    <i class="fa-regular fa-heart"></i>
-                </label>
-            </div>
+        <div class="animation-heart">
+          <div class="animation-heart-empty">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="animation-heart-full">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </div>
       </div>
       <div class="menu-entrées">
         <h2>entrées</h2>
@@ -40,21 +46,21 @@
           <h4>Tartare de thon</h4>
           <div class="menu-description">
             <p>Assaisonné au yuzu</p>
-            <p>25 €</p>
+            <h5>25 €</h5>
           </div>
         </div>
         <div class="menu-elements">
           <h4>Bouchée de homard croustillant </h4>
           <div class="menu-description">
             <p>Et sa farandole de petits légumes</p>
-            <p>35 €</p>
+            <h5>35 €</h5>
           </div>
         </div>
         <div class="menu-elements">
           <h4>Poulet rôti aux herbes de Provence </h4>
           <div class="menu-description">
             <p>Et sa crème de truffe</p>
-            <p>20 €</p>
+            <h5>20 €</h5>
           </div>
         </div>
       </div>
@@ -64,21 +70,21 @@
           <h4>Poulet rôti aux herbes de Provence </h4>
           <div class="menu-description">
             <p>Et sa crème de truffe</p>
-            <p>40 €</p>
+            <h5>40 €</h5>
           </div>
         </div>
         <div class="menu-elements">
           <h4>Langouste rôtie </h4>
           <div class="menu-description">
             <p>Et ses légumes de saison</p>
-            <p>35 €</p>
+            <h5>35 €</h5>
           </div>
         </div>
         <div class="menu-elements">
           <h4>Côte de bœuf Angus </h4>
           <div class="menu-description">
             <p>Et sa purée de panais</p>
-            <p>44 €</p>
+            <h5>44 €</h5>
           </div>
         </div>
       </div>
@@ -88,21 +94,21 @@
           <h4>Farandole de desserts</h4>
           <div class="menu-description">
             <p>Du chef</p>
-            <p>18 €</p>
+            <h5>18 €</h5>
           </div>
         </div>
         <div class="menu-elements">
           <h4>Crème brulée </h4>
           <div class="menu-description">
             <p>Revisité</p>
-            <p>22 €</p>
+            <h5>22 €</h5>
           </div>
         </div>
         <div class="menu-elements">
           <h4>Tiramisu</h4>
           <div class="menu-description">
             <p>À la noisette</p>
-            <p>23 €</p>
+            <h5>23 €</h5>
           </div>
         </div>
       </div>
@@ -123,7 +129,7 @@
         <p>Devenir partenaire</p>
       </div>
       <p>Mentions légales</p>
-      <p>Contact</p>
+      <a href="mailto:votreadresse@mail.fr">Contact</a>
     </div>
   </footer>
 </body>
