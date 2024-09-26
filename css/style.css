@@ -56,7 +56,7 @@ nav img {
   padding-right: 6vw;
   font-size: 5vw;
   text-align: center;
-  font-weight: 0;
+  font-weight: normal;
   padding-bottom: 30px;
 }
 .reservation button {
@@ -81,6 +81,8 @@ nav img {
 }
 
 .animation-heart {
+  width: 48px;
+  height: 48px;
   overflow: hidden;
 }
 
@@ -309,7 +311,7 @@ nav a {
   font-family: Shrikhand;
   font-size: 15px;
   font-style: italic;
-  font-weight: semibold;
+  font-weight: 600;
   font-weight: 100;
 }
 .menu-title i {
@@ -453,10 +455,6 @@ nav a {
 .fa-heart {
   cursor: pointer;
 }
-.fa-heart::before {
-  font-weight: 0;
-  color: black;
-}
 
 .toggle-checkbox:checked ~ .heart-container .fa-heart::before {
   font-weight: 900;
@@ -466,61 +464,6 @@ nav a {
   margin-right: 20px;
 }
 
-@media screen and (min-width: 768px) {
-  .menu-container {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .restaurant-img {
-    height: 500px;
-  }
-  .menu-title, .menu-entrées, .menu-plats, .menu-desserts {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .menu-entrées h2, .menu-plats h2, .menu-desserts h2 {
-    width: 3%;
-  }
-  .menu-title {
-    justify-content: center;
-    gap: 25px;
-  }
-  .reservation h2 {
-    font-size: 3rem;
-  }
-  .reservation p {
-    font-size: 1.5rem;
-  }
-  .fonctionnement h3 {
-    font-size: 1rem;
-  }
-  .fonctionnement .fonctionnement-container {
-    width: 18vw;
-  }
-  .fonctionnement-all {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 9vw;
-    margin-right: 9vw;
-  }
-  .fonctionnement .number-icon {
-    position: relative;
-    left: 0rem;
-  }
-  .fonctionnement h2, .restaurants h2 {
-    margin-left: 7.5vw;
-  }
-  .restaurant-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 40px;
-    margin-left: 7.5vw;
-    margin-right: 7.5vw;
-  }
-}
 .loading {
   display: flex;
   flex-direction: column;
@@ -591,6 +534,63 @@ nav a {
   background-color: white;
   padding: 3px;
   border-radius: 100%;
+  color: #63E6BE;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .restaurant-img {
+    height: 500px;
+  }
+  .menu-title, .menu-entrées, .menu-plats, .menu-desserts {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu-entrées h2, .menu-plats h2, .menu-desserts h2 {
+    width: 3%;
+  }
+  .menu-title {
+    justify-content: center;
+    gap: 25px;
+  }
+  .reservation h2 {
+    font-size: 3rem;
+  }
+  .reservation p {
+    font-size: 1.5rem;
+  }
+  .fonctionnement h3 {
+    font-size: 1rem;
+  }
+  .fonctionnement .fonctionnement-container {
+    width: 18vw;
+  }
+  .fonctionnement-all {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 9vw;
+    margin-right: 9vw;
+  }
+  .fonctionnement .number-icon {
+    position: relative;
+    left: 0rem;
+  }
+  .fonctionnement h2, .restaurants h2 {
+    margin-left: 7.5vw;
+  }
+  .restaurant-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+    margin-left: 7.5vw;
+    margin-right: 7.5vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
